@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddProductActivity"
+    android:orientation="vertical"
+    android:background="@color/lawngreen">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="@color/lawngreen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="ADD PRODUCT"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <!-- Form to input data -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/productIconIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_add_primary"/>
+
+        <EditText
+            android:id="@+id/titleEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productIconIv"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/lightwhite"
+            android:drawablePadding="10dp"
+            android:hint="Title"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/descriptionEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:hint="Description"
+            android:background="@color/lightwhite"
+            android:drawablePadding="10dp"
+            android:inputType="textCapSentences|textImeMultiLine"
+            android:textColorHint="@color/black"
+            android:padding="10dp"
+            android:layout_below="@+id/titleEt"/>
+
+        <TextView
+            android:id="@+id/categoryTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/descriptionEt"
+            android:layout_marginStart="5dp"
+
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/lightwhite"
+            android:drawablePadding="10dp"
+            android:hint="Category"
+            android:textColorHint="@color/black"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/quantityEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:background="@color/lightwhite"
+            android:hint="Quantity e.g kg, g etc"
+            android:drawablePadding="10dp"
+            android:textColorHint="@color/black"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:layout_below="@+id/categoryTv"/>
+
+        <EditText
+            android:id="@+id/marketPriceEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quantityEt"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/lightwhite"
+            android:drawablePadding="10dp"
+            android:hint="Market Price"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/priceEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/marketPriceEt"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/lightwhite"
+            android:drawablePadding="10dp"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/addProductBtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priceEt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:minWidth="150dp"
+            android:text="Add Product" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

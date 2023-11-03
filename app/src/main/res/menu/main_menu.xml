@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:title="Profile">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:title="Login"/>
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="My Account"/>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="Logout"/>
+            </group>
+
+        </menu>
+    </item>
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_mycart"
+            android:title="My Cart"/>
+        <item
+            android:id="@+id/nav_myorder"
+            android:title="My Order"/>
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myproducts"
+            android:title="My Products"/>
+        <item
+            android:id="@+id/nav_mysales"
+            android:title="My Sales"/>
+
+    </group>
+
+</menu>

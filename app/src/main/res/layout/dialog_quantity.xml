@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lawngreen">
+
+        <ImageView
+            android:id="@+id/productIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_shopping_cart_black"/>
+
+        <TextView
+            android:id="@+id/titletv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/productIv"
+            android:layout_marginTop="5dp"
+            android:text="Product Title"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"/>
+
+        <TextView
+            android:id="@+id/pQuantityTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/titletv"
+            android:layout_marginTop="5dp"
+            android:text="Quantity"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:fontFamily="sans-serif-black"/>
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/pQuantityTv"
+            android:layout_marginTop="5dp"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+    <TextView
+        android:id="@+id/originalPriceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Rs.12"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/finalPriceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Final Price"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="textStart"
+        android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageButton
+            android:id="@+id/decrementBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_baseline_remove_circle_outline_24"/>
+
+        <TextView
+            android:id="@+id/quantityTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/incrementBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_add_black"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Add to Cart"
+        android:elevation="5dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

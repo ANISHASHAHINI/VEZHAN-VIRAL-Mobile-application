@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Farmers Cart</string>
+    <string name="enter_username">ENTER USERNAME</string>
+    <string name="enter_password">ENTER PASSWORD</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forget_password">forget Password</string>
+    <string name="login">LOGIN</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="enter_full_name">ENTER FULL NAME</string>
+    <string name="enter_email">ENTER EMAIL</string>
+    <string name="enter_mobileno">ENTER MOBILE NO</string>
+    <string name="nxt_btn">NEXT</string>
+    <string name="country">ENTER COUNTRY</string>
+    <string name="state">ENTER STATE</string>
+    <string name="city">ENTER CITY</string>
+    <string name="street">ENTER STREET</string>
+    <string name="pincode">ENTER PINCODE</string>
+
+
+    <string name="otp_code_text">Co\nde</string>
+    <string name="otp_verification_text">Verification</string>
+    <string name="otp_description_text">Enter one time password</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="forget_password_detail">Provide your Accounts email for which you want to reset your password</string>
+    <string name="make_selection">Make\nSelection</string>
+    <string name="make_selection_detail">Select which contact detail should we use to reset your password?</string>
+    <string name="via_sms">via SMS:</string>
+    <string name="via_mail">via Mail:</string>
+    <string name="new_credentials">New\nCredentials</string>
+    <string name="new_credentials_details">Your identity has been verified! set your new password</string>
+    <string name="password_update">Password\nUpdated</string>
+    <string name="password_updated_success_message">Your password has been updated!</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--row shop-->
+    <string name="farm_name1">Farm Name</string>
+    <string name="phone1">Phone</string>
+    <string name="address1">Address</string>
+
+    <!--row review-->
+    <string name="name1">Name</string>
+    <string name="dd_mm_yyyy1">DD/MM/YYYY</string>
+    <string name="org_review_user1">The Original Review Of the User</string>
+
+    <!-- row_product_user-->
+    <string name="title1">Title</string>
+    <string name="prod_decrip1">The product Description</string>
+    <string name="add_to_cart1">Add to Cart</string>
+    <string name="default_20">Rs 20</string>
+    <string name="default_45">Rs 45</string>
+
+    <!-- row product seller-->
+    <string name="quantity">Quantity</string>
+
+
+</resources>
